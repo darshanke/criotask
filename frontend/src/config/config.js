@@ -1,3 +1,3 @@
-const baseUrl =   `http://10.10.20.203:8082/v1/`;
+const baseUrl =   `https://criotask.onrender.com/v1/`;
 
 export default baseUrl;
