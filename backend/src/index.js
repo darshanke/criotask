@@ -2,11 +2,11 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const app = require("./app");
 
-const PORT = process.env.PORT || 3000;
-
+const PORT = process.env.PORT;
+console.log(process.env.MONGO_URI);  
 mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
 })
 .then(() => {
     console.log("MongoDB connected");
